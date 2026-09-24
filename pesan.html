@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>keahlian</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #dcdcdc;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Container utama */
+        .container {
+            width: 720px;
+            margin: 10px auto;
+            background-color: white;
+            padding: 10px;
+        }
+
+        /* Header */
+        header h1 {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #111;
+        }
+
+        /* Navbar */
+        nav {
+            height: 29px;
+            background-color: #ff8c00;
+            display: flex;
+            align-items: stretch;
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+
+            background-color: #990000;
+
+            padding: 8px 14px;
+            display: flex;
+            align-items: center;
+
+            border-right: 1px solid white;
+        }
+
+        nav a:hover {
+            background-color: #770000;
+        }
+
+        /* Area kosong navbar */
+        nav .nav-space {
+            flex: 1;
+        }
+
+        /* Banner */
+        .banner {
+            width: 100%;
+            height: 393px;
+            object-fit: cover;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* Layout 3 kolom */
+        .content {
+            display: grid;
+            grid-template-columns: 165px 1fr 165px;
+            gap: 15px;
+        }
+
+        /* Semua kolom */
+        .column {
+            font-size: 12px;
+            line-height: 1.05;
+            color: #111;
+        }
+
+        /* Judul kolom */
+        .column-title {
+            background-color: #a00000;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            text-align: center;
+
+            padding: 7px 5px;
+            margin-bottom: 10px;
+        }
+
+        /* Daftar Keahlian */
+        .left-box {
+            background-color: #f5f5d8;
+            padding-bottom: 10px;
+        }
+
+        .left-box p {
+            margin-bottom: 5px;
+            text-align: justify;
+            padding: 0 5px;
+        }
+
+        /* Keterangan Keahlian */
+        .main-content p {
+            margin-bottom: 4px;
+            text-align: justify;
+        }
+
+        /* Ektrakulikuler */
+        .right-content p {
+            text-align: left;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 18px;
+            height: 25px;
+            background-color: #ff8c00;
+
+            color: white;
+            font-size: 11px;
+            font-weight: bold;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <header>
+            <h1>Apa Saja Keahliannya?</h1>
+        </header>
+
+        <!-- NAVBAR -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Awal.html">Awal</a>
+            <a class="active" href="pesan.html">Pesan</a>
+            <a href="kontak.html">Kontak</a>
+
+            <div class="nav-space"></div>
+        </nav>
+
+        <!-- GAMBAR BANNER -->
+        <img 
+            class="banner"
+            src="emperor.jpg"
+            alt="emperor"
+        >
+
+        <!-- CONTENT -->
+        <div class="content">
+
+            <!-- Daftar Keahlian -->
+            <div class="column left-box">
+
+                <div class="column-title">
+                    Daftar Keahlian
+                </div>
+                <img src="win.jpg"
+                alt="chess"
+                width="160"
+                height="160"
+                display: block;
+                margin-bottom: 10px;>
+
+            <p>
+                Konfigurasi ip address
+            </p>
+
+            <p>
+              Install linux seperti kali linux, cachyos, debian, arch
+            </p>
+
+            <p>
+              Istall atau install ulang windows 11 dan windows 10
+            </p>
+
+            <p>
+              Membuat website sederhana
+            </p>
+            
+            <p>
+              Mengkonfigurasi ssd degan gparted
+            </p>
+            </div>
+
+
+            <!-- Keterangan Keahlian -->
+            <div class="column main-content">
+
+                <div class="column-title">
+                    Keterangan Keahlian
+                </div>
+                <img src="os.jpg"
+                alt="os"
+                width="100%"
+                height="100px"
+                display: block;
+                margin-bottom: 15px;>
+
+                <p>
+                   Konfigurasi IP Address: Mengonfigurasi IP address dan pengaturan jaringan dasar untuk konektivitas perangkat.
+                </p>
+
+                <p>
+                    Instalasi Linux: Melakukan instalasi dan setup berbagai distro Linux (Debian, Kali Linux, Arch, dan CachyOS).
+                </p>
+
+                <p>
+                    Instalasi Windows: Melakukan instalasi baru maupun instalasi ulang Windows 10 dan Windows 11.
+                </p>
+
+                <p>
+                    Pembuatan Website: Membangun dan merancang website sederhana yang fungsional dan responsif.
+                </p>
+
+                <p>
+                    Manajemen SSD (GParted): Mengonfigurasi dan mengelola partisi SSD secara aman menggunakan GParted.
+                </p>
+
+            </div>
+
+
+            <!-- Ektrakulikuler -->
+            <div class="column right-content">
+
+                <div class="column-title">
+                    Ektrakulikuler
+                </div>
+
+                <p>
+                    badminton
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            ©Copyright 2025
+        </footer>
+
+    </div>
+
+</body>
+</html>
